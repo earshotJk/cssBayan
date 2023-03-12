@@ -1,5 +1,74 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+h1 {
+    text-align: left;
+    color: black;
 }
+
+.container {
+    width: 40%;
+    margin: 0 auto;
+    font-size: 25px;
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+}
+
+.container:hover {
+    color: black;
+}
+
+.container:hover .cross {
+    visibility: visible;
+    transition: all 0.5s ease;
+}
+
+.img1 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100%;
+    visibility: hidden;
+    background-image: url(/cssBayan/images/meme1.jpg);
+}
+
+.img2 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100%;
+    visibility: hidden;
+    background-image: url(/cssBayan/images/meme2.jpg);
+}
+
+.img3 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100%;
+    visibility: hidden;
+    background-image: url(/cssBayan/images/meme3.jpg);
+}
+
+.img4 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100%;
+    visibility: hidden;
+    background-image: url(/cssBayan/images/meme4.jpg);
+}
+
+.img5 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100%;
+    visibility: hidden;
+    background-image: url(/cssBayan/images/meme5.jpg);
+}
+
+/* Animations, etc */
+
+
+
+
+
