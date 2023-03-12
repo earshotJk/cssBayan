@@ -1,0 +1,287 @@
+h1 {
+    text-align: left;
+    color: black;
+}
+
+.container {
+    width: 40%;
+    margin: 0 auto;
+    font-size: 	1.5625rem;
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+}
+
+.container:hover {
+    color: black;
+}
+
+.container:hover svg {
+    fill: black;
+}
+
+.container:hover .arrow {
+    visibility: visible;
+    transition: all 0.5s ease;
+}
+
+label {
+    padding-top: 0.4rem;
+}
+
+svg {
+    padding-top: 0.6rem;
+}
+
+.img1 {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    visibility: hidden;
+    background-image: url(./images/meme1.jpg);
+}
+
+.img2 {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    visibility: hidden;
+    background-image: url(./images/meme2.jpg);
+}
+
+.img3 {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    visibility: hidden;
+    background-image: url(./images/meme3.jpg);
+}
+
+.img4 {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    visibility: hidden;
+    background-image: url(./images/meme4.jpg);
+}
+
+.img5 {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    visibility: hidden;
+    background-image: url(./images/meme5.jpg);
+}
+
+/* Animations, etc */
+
+.mem {
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.5s ease;
+    height: 2.5rem;
+    padding: 0.2rem 0;
+    border-top: 0.1rem solid #beb8b8;
+    overflow: hidden;
+}
+
+.arrow {
+    height: 1.3rem;
+    visibility: hidden;
+}
+
+label {
+    cursor: pointer;
+    width: 100%;
+}
+
+input {
+    visibility: hidden;
+    cursor: pointer;
+    width: 0;
+}
+
+input:checked {
+    transition: all 0.5s ease;
+}
+
+input:checked~label>div {
+    visibility: visible;
+}
+
+.mem input:checked~label {
+    color: black;
+}
+
+.mem input:checked~svg{
+    fill: black;
+    transform: rotate(90deg);
+}
+
+.mem input:hover~svg{
+    fill: black;
+    transform: rotate(90deg);
+}
+
+.mem:has(>input:checked) {
+    transition: all 0.5s ease;
+    height: 60vh;
+}
+
+.mem:hover {
+    color: black;
+    height: 60vh;
+    transition: all 0.5s ease;
+}
+
+.mem:hover>label>div {
+    visibility: visible;
+    transition: all 0.5s ease;
+}
+
+label:active {
+    filter: opacity(65%);
+    color: blue;
+}
+
+svg:active {
+    filter: opacity(65%);
+}
+
+.mem input:active~svg {
+    fill: blue;
+}
+
+.mem input:active~label {
+    color: blue;
+}
+
+input:checked~label {
+    height: 100%;
+    transition: all 0.5s ease;
+}
+
+.mem:hover>label {
+    height: 100%;
+    transition: all 0.5s ease;
+}
+
+/* @media */
+
+@media screen and (max-width: 1920px) {
+    .container {
+        width: 50%;
+        font-size: 1.7em;
+    }
+
+    .meme {
+        height: 2rem;
+    }
+
+    .img1 {
+        background-size: 50vh;
+        height: 100%;
+    }
+
+    .img2 {
+        background-size: 45vh;
+        height: 100%;
+    }
+
+    .img3 {
+        background-size: 48vh;
+        height: 100%;
+    }
+
+    .img4 {
+        background-size: 65vh;
+        height: 100%;
+    }
+
+    .img5 {
+        background-size: 38vh;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        cursor: pointer;
+        color: blue;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    .meme {
+        min-height: 1.2rem;
+
+    }
+
+    .img1 {
+        background-size: 50vh;
+        height: 100%;
+    }
+
+    .img2 {
+        background-size: 45vh;
+        height: 100%;
+    }
+
+    .img3 {
+        background-size: 48vh;
+        height: 100%;
+    }
+
+    .img4 {
+        background-size: contain;
+        height: 100%;
+    }
+
+    .img5 {
+        background-size: 40vh;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        cursor: pointer;
+        color: blue;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    .meme {
+        min-height: 1.2rem;
+
+    }
+
+    .img1 {
+        background-size: 45vh;
+        height: 100%;
+    }
+
+    .img2 {
+        background-size: 35vh;
+        height: 100%;
+    }
+
+    .img3 {
+        background-size: contain;
+        height: 100%;
+    }
+
+    .img4 {
+        background-size: 60vh;
+        height: 100%;
+    }
+
+    .img5 {
+        background-size: 38vh;
+        height: 100%;
+    }
+}
