@@ -16,14 +16,26 @@ h1 {
     color: black;
 }
 
-.container:hover .cross {
+.container:hover svg {
+    fill: black;
+}
+
+.container:hover .arrow {
     visibility: visible;
     transition: all 0.5s ease;
 }
 
+label {
+    padding-top: 15px;
+}
+
+svg {
+    padding-top: 15px;
+}
+
 .img1 {
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 500px 450px;
     background-position: center;
     height: 100%;
     visibility: hidden;
@@ -32,7 +44,7 @@ h1 {
 
 .img2 {
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 500px 450px;
     background-position: center;
     height: 100%;
     visibility: hidden;
@@ -41,7 +53,7 @@ h1 {
 
 .img3 {
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 500px 450px;
     background-position: center;
     height: 100%;
     visibility: hidden;
@@ -50,7 +62,7 @@ h1 {
 
 .img4 {
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 500px 450px;
     background-position: center;
     height: 100%;
     visibility: hidden;
@@ -59,7 +71,7 @@ h1 {
 
 .img5 {
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 500px 500px;
     background-position: center;
     height: 100%;
     visibility: hidden;
@@ -67,6 +79,106 @@ h1 {
 }
 
 /* Animations, etc */
+
+.mem {
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.5s ease;
+    height: 55px;
+    padding: 3px 0;
+    border-top: 1.6px solid #beb8b8;
+    overflow: hidden;
+}
+
+.arrow {
+    height: 21px;
+    visibility: hidden;
+}
+
+label {
+    cursor: pointer;
+    width: 100%;
+}
+
+input {
+    visibility: hidden;
+    cursor: pointer;
+    width: 0;
+}
+
+input:checked {
+    transition: all 0.5s ease;
+}
+
+input:checked~label>div {
+    visibility: visible;
+}
+
+.mem input:checked~label {
+    color: black;
+}
+
+.mem input:checked~svg{
+    fill: black;
+    transform: rotate(90deg);
+}
+
+.mem input:hover~svg{
+    fill: black;
+    transform: rotate(90deg);
+}
+
+.mem:has(>input:checked) {
+    transition: all 0.5s ease;
+    height: 60vh;
+}
+
+.mem:hover {
+    color: black;
+    height: 60vh;
+    transition: all 0.5s ease;
+}
+
+.mem:hover>label>div {
+    visibility: visible;
+    transition: all 0.5s ease;
+}
+
+label:active {
+    filter: opacity(65%);
+    color: blue;
+}
+
+.mem input:active~svg{
+    filter: opacity(65%);
+    fill: blue;
+}
+
+.mem input:active~label {
+    color: blue;
+}
+
+input:checked~label {
+    height: 100%;
+    transition: all 0.5s ease;
+}
+
+.mem:hover>label {
+    height: 100%;
+    transition: all 0.5s ease;
+}
+
+/* @media */
+
+
+
+
+
+
+
+
+
+
 
 
 
