@@ -6,7 +6,7 @@ h1 {
 .container {
     width: 40%;
     margin: 0 auto;
-    font-size: 25px;
+    font-size: 	1.5625rem;
     font-weight: bold;
     color: blue;
     cursor: pointer;
@@ -26,16 +26,15 @@ h1 {
 }
 
 label {
-    padding-top: 15px;
+    padding-top: 0.4rem;
 }
 
 svg {
-    padding-top: 15px;
+    padding-top: 0.6rem;
 }
 
 .img1 {
     background-repeat: no-repeat;
-    background-size: 500px 450px;
     background-position: center;
     height: 100%;
     visibility: hidden;
@@ -44,7 +43,6 @@ svg {
 
 .img2 {
     background-repeat: no-repeat;
-    background-size: 500px 450px;
     background-position: center;
     height: 100%;
     visibility: hidden;
@@ -53,7 +51,6 @@ svg {
 
 .img3 {
     background-repeat: no-repeat;
-    background-size: 500px 450px;
     background-position: center;
     height: 100%;
     visibility: hidden;
@@ -62,7 +59,6 @@ svg {
 
 .img4 {
     background-repeat: no-repeat;
-    background-size: 500px 450px;
     background-position: center;
     height: 100%;
     visibility: hidden;
@@ -71,7 +67,6 @@ svg {
 
 .img5 {
     background-repeat: no-repeat;
-    background-size: 500px 500px;
     background-position: center;
     height: 100%;
     visibility: hidden;
@@ -84,14 +79,14 @@ svg {
     display: flex;
     justify-content: space-between;
     transition: all 0.5s ease;
-    height: 55px;
-    padding: 3px 0;
-    border-top: 1.6px solid #beb8b8;
+    height: 2.5rem;
+    padding: 0.2rem 0;
+    border-top: 0.1rem solid #beb8b8;
     overflow: hidden;
 }
 
 .arrow {
-    height: 21px;
+    height: 1.3rem;
     visibility: hidden;
 }
 
@@ -149,8 +144,11 @@ label:active {
     color: blue;
 }
 
-.mem input:active~svg{
+svg:active {
     filter: opacity(65%);
+}
+
+.mem input:active~svg {
     fill: blue;
 }
 
@@ -173,7 +171,7 @@ input:checked~label {
 @media screen and (max-width: 1920px) {
     .container {
         width: 50%;
-        font-size: 1.5em;
+        font-size: 1.7em;
     }
 
     .meme {
@@ -181,27 +179,27 @@ input:checked~label {
     }
 
     .img1 {
-        background-size: 490px;
+        background-size: 50vh;
         height: 100%;
     }
 
     .img2 {
-        background-size: 430px;
+        background-size: 45vh;
         height: 100%;
     }
 
     .img3 {
-        background-size: 470px;
+        background-size: 48vh;
         height: 100%;
     }
 
     .img4 {
-        background-size: 640px;
+        background-size: 65vh;
         height: 100%;
     }
 
     .img5 {
-        background-size: 380px;
+        background-size: 38vh;
         height: 100%;
     }
 }
@@ -222,17 +220,17 @@ input:checked~label {
     }
 
     .img1 {
-        background-size: 620px;
+        background-size: 50vh;
         height: 100%;
     }
 
     .img2 {
-        background-size: 550px;
+        background-size: 45vh;
         height: 100%;
     }
 
     .img3 {
-        background-size: 600px;
+        background-size: 48vh;
         height: 100%;
     }
 
@@ -242,7 +240,7 @@ input:checked~label {
     }
 
     .img5 {
-        background-size: 500px;
+        background-size: 40vh;
         height: 100%;
     }
 }
@@ -263,12 +261,12 @@ input:checked~label {
     }
 
     .img1 {
-        background-size: contain;
+        background-size: 45vh;
         height: 100%;
     }
 
     .img2 {
-        background-size: 210px;
+        background-size: 35vh;
         height: 100%;
     }
 
@@ -278,12 +276,12 @@ input:checked~label {
     }
 
     .img4 {
-        background-size: contain;
+        background-size: 60vh;
         height: 100%;
     }
 
     .img5 {
-        background-size: 210px;
+        background-size: 38vh;
         height: 100%;
     }
 }
